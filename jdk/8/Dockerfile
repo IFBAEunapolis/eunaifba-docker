@@ -1,4 +1,4 @@
-#eunaifba/jdk:8
+#ifbaeunapolis/jdk:8
 FROM ubuntu:14.04
 
 # Install Java 8
@@ -9,6 +9,6 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update && apt-get install oracle-java
 
 ENV JAVA_HOME /usr/lib/jvm/java-8-oracle
 
-# docker build -t eunaifba/jdk:8 .
-# docker build --no-cache -t eunaifba/jdk:8 .
-# docker run --name jdk8 -it eunaifba/jdk:8 bash
+# docker build -t ifbaeunapolis/jdk:8 .
+# docker build --no-cache -t ifbaeunapolis/jdk:8 .
+# docker run --name jdk8 -it ifbaeunapolis/jdk:8 bash
