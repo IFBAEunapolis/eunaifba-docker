@@ -1,0 +1,28 @@
+wildfly-mysql:
+
+  image: ifbaeunapolis/wildfly-mysql
+
+  links:
+
+    - db
+
+  ports:
+    - "9990:9990"
+
+    - "8080:8081"
+  
+ db:
+
+  image: mysql:latest
+
+  environment:
+
+    MYSQL_ROOT_PASSWORD: root
+
+    MYSQL_DATABASE: SADE
+
+    MYSQL_USER: ifba
+
+    MYSQL_PASSWORD: ifba123
+
+
