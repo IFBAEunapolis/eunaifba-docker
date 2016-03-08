@@ -1,6 +1,6 @@
 wildfly-mysql:
 
-  image: ifbaeunapolis/wildfly-mysql
+  image:ifbaeunapolis/wildfly-mysql
 
   links:
 
