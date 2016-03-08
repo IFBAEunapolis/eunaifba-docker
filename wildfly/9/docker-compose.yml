@@ -1,6 +1,6 @@
 wildfly-mysql:
 
-  image: huggosantos/wildfly
+  image: ifbaeunapolis/wildfly
 
 
   ports:
