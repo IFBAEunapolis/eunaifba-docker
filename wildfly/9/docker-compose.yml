@@ -2,7 +2,6 @@ wildfly-mysql:
 
   image: ifbaeunapolis/wildfly
 
-
   ports:
     - "9990:9990"
 
