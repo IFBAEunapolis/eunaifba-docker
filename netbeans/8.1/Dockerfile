@@ -20,7 +20,7 @@ RUN axel http://download.netbeans.org/netbeans/8.1/final/zip/moduleclusters/netb
 RUN unzip netbeans-8.1-201510222201-all-in-one.zip
 
 #push project SADE IFBA Eunapolis-BA 
-RUN mkdir /home/desenvovedor/NetBeansProjects 
-RUN cd /home/desenvovedor/NetBeansProjects &&  git clone https://github.com/IFBAEunapolis/SADE.git 
+RUN mkdir /home/NetBeansProjects 
+RUN cd /home/NetBeansProjects &&  git clone https://github.com/IFBAEunapolis/SADE.git 
 
 CMD /netbeans/bin/netbeans
