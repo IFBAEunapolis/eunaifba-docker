@@ -1,4 +1,4 @@
-FROM huggosantos/wildfly-mysql
+FROM ifbaeunapolis/jdk
 MAINTAINER Huggo Oliveira "huggo.oliveira1@gmail.com"
 
 USER root 
