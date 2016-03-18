@@ -11,7 +11,7 @@ RUN apt-get install -y maven
 
 RUN apt-get install unzip
 RUN apt-get install -q -y axel 
-RUN apt-get install -y xorg
+RUN  apt-get update && apt-get install -y xorg
 
 
 #install netbeans
