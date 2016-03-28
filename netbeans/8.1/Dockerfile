@@ -12,8 +12,8 @@ RUN apt-get update && apt-get install -y  git
 RUN apt-get install -y maven
 
 #install netbeans
-RUN axel http://download.netbeans.org/netbeans/8.1/final/zip/moduleclusters/netbeans-8.1-201510222201-all-in-one.zip
-RUN unzip netbeans-8.1-201510222201-all-in-one.zip
+RUN cd opt && axel http://download.netbeans.org/netbeans/8.1/final/zip/moduleclusters/netbeans-8.1-201510222201-all-in-one.zip
+RUN cd opt && unzip netbeans-8.1-201510222201-all-in-one.zip
 
 #push project SADE IFBA Eunapolis-BA 
 RUN mkdir /home/NetBeansProjects 
