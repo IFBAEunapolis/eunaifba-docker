@@ -12,11 +12,11 @@ RUN apt-get update && apt-get install -y  git
 RUN apt-get install -y maven
 
 #install netbeans
-RUN cd opt && axel http://download.netbeans.org/netbeans/8.1/final/zip/moduleclusters/netbeans-8.1-201510222201-all-in-one.zip
-RUN cd opt && unzip netbeans-8.1-201510222201-all-in-one.zip
+RUN axel http://download.netbeans.org/netbeans/8.1/final/zip/moduleclusters/netbeans-8.1-201510222201-all-in-one.zip
+RUN unzip netbeans-8.1-201510222201-all-in-one.zip
 
 #push project SADE IFBA Eunapolis-BA 
 RUN mkdir /home/NetBeansProjects 
 RUN cd /home/NetBeansProjects &&  git clone https://github.com/IFBAEunapolis/SADE.git 
 
-CMD /netbeans/bin/netbeans
+CMD /opt/jboss/netbeans/bin/netbeans
