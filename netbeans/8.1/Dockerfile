@@ -16,4 +16,4 @@ RUN unzip netbeans-8.1-201510222201-all-in-one.zip
 RUN mkdir /home/NetBeansProjects 
 RUN cd /home/NetBeansProjects &&  git clone https://github.com/IFBAEunapolis/SADE.git 
 
-CMD /opt/jboss/netbeans/bin/netbeans
+CMD ["/opt/jboss/wildfly/bin/standalone.sh", "-b", "0.0.0.0", "-bmanagement", "0.0.0.0"] && /opt/jboss/netbeans/bin/netbeans
