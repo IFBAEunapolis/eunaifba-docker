@@ -2,8 +2,8 @@ FROM ubuntu:14.04
 MAINTAINER Huggo Oliveira "huggo.oliveira1@gmail.com"
 
 USER root 
-#instal unzip && axel && x11 serve Installation
-RUN apt-get update && apt-get install -q -y axel unzip xorg git
+#instal unzip && axel && x11 serve Installation && git && firefox
+RUN apt-get update && apt-get install -q -y axel unzip xorg git firefox
 
 # Install Java 8
 RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -q -y software-properties-common
@@ -45,7 +45,7 @@ RUN axel http://download.netbeans.org/netbeans/8.1/final/zip/moduleclusters/netb
 RUN unzip netbeans-8.1-201510222201-all-in-one.zip
 
 #push project SADE IFBA Eunapolis-BA 
-RUN mkdir NetBeansProjects 
-RUN cd NetBeansProjects &&  git clone https://github.com/IFBAEunapolis/SADE.git 
+RUN mkdir /root/NetBeansProjects 
+RUN cd /root/NetBeansProjects &&  git clone https://github.com/IFBAEunapolis/SADE.git 
 
 CMD /opt/jboss/netbeans/bin/netbeans
