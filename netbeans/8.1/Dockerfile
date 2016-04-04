@@ -14,13 +14,13 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update && apt-get install oracle-java
 ENV JAVA_HOME /usr/lib/jvm/java-8-oracle
 
 #install wildfly 9.0.2
-RUN adduser --disabled-password --home /opt/jboss --gecos "" jboss
+#RUN adduser --disabled-password --home /opt/jboss --gecos "" jboss
 
 # Set the working directory to jboss' user home directory
 WORKDIR /opt/jboss
 
 # Specify the user which should be used to execute all commands below
-USER jboss
+#USER jboss
 
 # Set the WILDFLY_VERSION env variable
 ENV WILDFLY_VERSION 9.0.2.Final
