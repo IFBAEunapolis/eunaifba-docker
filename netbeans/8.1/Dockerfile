@@ -2,6 +2,9 @@ FROM ubuntu:14.04
 MAINTAINER Huggo Oliveira "huggo.oliveira1@gmail.com"
 
 USER root 
+#instal unzip && axel && x11 serve Installation
+RUN apt-get install -q -y axel unzip xorg
+
 # Install Java 8
 RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -q -y software-properties-common
 RUN apt-add-repository ppa:webupd8team/java -y
@@ -36,10 +39,6 @@ ENV JBOSS_HOME /opt/jboss/wildfly
 RUN /opt/jboss/wildfly/bin/add-user.sh admin wildfly --silent
 
 EXPOSE 8080 9990
-
-
-#instal unzip && axel && x11 serve Installation
-RUN apt-get install -q -y axel unzip xorg
 
 #install git 
 RUN apt-get update && apt-get install -y  git 
