@@ -1,5 +1,5 @@
 netbeans_wildfly:
-   image: 1c98c2340c15
+   image: ifbaeunapolis/netbeans-wildfly-mysql-driver
    environment: 
        - DISPLAY=:0
    volumes:

@@ -12,4 +12,7 @@ xhost +local:docker
 sudo docker run -it --env="DISPLAY" --workdir="/home/$USER" --volume="/home/$USER:/home/$USER" --volume="/etc/group:/etc/group:ro" --volume="/etc/passwd:/etc/passwd:ro" --volume="/etc/shadow:/etc/shadow:ro" --volume="/etc/sudoers.d:/etc/sudoers.d:ro" --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" --name netbeans ifbaeunapolis/netbeans-wildfly-mysql-driver
 
 Rodar com o docker-compose
-...
+ 
+ No terminal do docker basta rodar o comando: docker-compose -f netbeans-docker-compose.yml up , isso no diretorio onde estar o arquivo .yml .
+
+ 
