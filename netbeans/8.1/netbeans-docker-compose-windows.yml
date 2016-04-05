@@ -1,0 +1,11 @@
+netbeans_remote:
+   image: huggosantos/netbeans
+   environment: 
+       - DISPLAY=192.168.56.1:0
+   volumes:
+       - /home/$USER:/home/$USER
+       - /etc/group:/etc/group:ro
+       - /etc/passwd:/etc/passwd:ro
+       - /etc/shadow:/etc/shadow:ro
+       - /etc/sudoers.d:/etc/sudoers.d:ro
+       - /tmp/.X11-unix:/tmp/.X11-unix:rw
