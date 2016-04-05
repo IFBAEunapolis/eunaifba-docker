@@ -1,4 +1,4 @@
-netbeans_wildfly:
+netbeans_wildfly_SADE:
    image: ifbaeunapolis/netbeans-wildfly-mysql-driver
    environment: 
        - DISPLAY=:0
