@@ -1,6 +1,8 @@
 [![Stories in Ready](https://badge.waffle.io/IFBAEunapolis/eunaifba-docker.png?label=ready&title=Ready)](https://waffle.io/IFBAEunapolis/eunaifba-docker)
 [![Stories in Progress](https://badge.waffle.io/IFBAEunapolis/eunaifba-docker.png?label=in%20progress&title=In%20Progress)](https://waffle.io/IFBAEunapolis/eunaifba-docker)
 
+[![Docker Pulls](https://img.shields.io/docker/pulls/ifbaeunapolis/netbeans-wildfly-mysql-driver.svg?style=flat-square)](https://links.ifbaeunapolis/netbeans-wildfly-mysql-driver)
+
 
 
 # Netbeans 8.1
