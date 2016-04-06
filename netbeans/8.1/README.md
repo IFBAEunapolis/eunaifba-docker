@@ -1,3 +1,8 @@
+[![Stories in Ready](https://badge.waffle.io/IFBAEunapolis/eunaifba-docker.png?label=ready&title=Ready)](https://waffle.io/IFBAEunapolis/eunaifba-docker)
+[![Stories in Progress](https://badge.waffle.io/IFBAEunapolis/eunaifba-docker.png?label=in%20progress&title=In%20Progress)](https://waffle.io/IFBAEunapolis/eunaifba-docker)
+
+
+
 # Netbeans 8.1
 
 Nesse repositório está presente o Dockerfile para construção da imagem do netbenas já com  wildfly 9.0.2, jdk 8, e o firefox 45 instalados para facilitar no desenvolvimento do projeto. Essa imagem do netbeans está baseada no sistema operecional linux, mas precisamente o ubuntu 14.04 lts. Depois do download da imagem feito nosse site -->  https://hub.docker.com/r/ifbaeunapolis/netbeans-wildfly-mysql-driver/ , pode-se criar o container dessa imagem através dos comandos abaixo.
